@@ -1,0 +1,10 @@
+[user]
+    name = Jon Kitzrow
+    email = account@jonkitzrow.com
+
+[color]
+    ui = auto
+
+[core]
+    editor = nvim
+EOF
