@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Start SXHKD
+sxhkd -c /home/user/.config/sxhkd/sxhkdrc &
+
+# Start Polybar
+polybar desktop &
+
+# Set wallpaper
+feh --bg-fill ~/.config/desktop/wallpaper.png
+
+# Start Syncthing
+syncthing &
+
+# Add bspwm workspaces
+bspc monitor -d $(printf '\uf015 \uf1e0 \uf392 \uf144 5 \uf11b 7 \uf07b 9 \uf120')
+
+# Start picom
+picom &
